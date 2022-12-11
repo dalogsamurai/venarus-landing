@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import cn from "classnames";
+import iMenuWave from "../assets/menu-wave.svg";
 import "./menu.component.sass";
 
 export const Menu = () => {
@@ -27,9 +28,18 @@ export const Menu = () => {
         <div className="menu__item">Специалистам</div>
       </div>
       <div className="header__btn" onClick={toggleMenu}>
-        <div className={cn("header__btn-row", { _opened: isOpen })} />
-        <div className={cn("header__btn-row", { _opened: isOpen })} />
-        <div className={cn("header__btn-row", { _opened: isOpen })} />
+        <img
+          src={iMenuWave}
+          className={cn("header__btn-row", { _opened: isOpen })}
+        />
+        <img
+          src={iMenuWave}
+          className={cn("header__btn-row", { _opened: isOpen })}
+        />
+        <img
+          src={iMenuWave}
+          className={cn("header__btn-row", { _opened: isOpen })}
+        />
       </div>
     </>
   );
