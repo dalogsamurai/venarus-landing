@@ -34,14 +34,14 @@
         width: 66px
         border-radius: 15px
         transition: transform 0.3s
-        // &._opened
-        //     &:first-child
-        //         position: absolute
-        //         transform: rotate(45deg)
-        //         top: 7px
-        //     &:last-child
-        //         position: absolute
-        //         transform: rotate(-45deg)
-        //         bottom: 7px
-        //     &:nth-child(2)
-        //         opacity: 0
+        &._opened
+            &:first-child
+                position: absolute
+                opacity: 0
+                transform: translate(0,10px)
+            &:last-child
+                position: absolute
+                opacity: 0
+                transform: translate(0,-10px)
+            &:nth-child(2)
+                margin-bottom: 15px
