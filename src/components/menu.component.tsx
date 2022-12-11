@@ -41,6 +41,12 @@ export const Menu = () => {
           className={cn("header__btn-row", { _opened: isOpen })}
         />
       </div>
+      {/* <div className="purple-line" />
+      <div className="purple-line" />
+      <div className="purple-line" />
+      <div className="purple-line" />
+      <div className="purple-line" /> */}
+      {/* TODO */}
     </>
   );
 };
