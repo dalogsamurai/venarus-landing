@@ -17,10 +17,18 @@
     overflow: auto
     flex-direction: column
     justify-content: start
-    gap: 68px
-    padding: 66px 26px
+    gap: 107px
+    padding: 224px 150px
     &._open
         transform: translateY(0%)
+    &__item
+        transition-duration: .3s
+        font-family: 'Merriweather'
+        font-weight: 700
+        line-height: 100%
+        cursor: pointer
+        &:hover
+            color: $purple-hover
 
 .header
     &__btn
@@ -39,10 +47,13 @@
             &:first-child
                 position: absolute
                 opacity: 0
-                transform: translate(0,10px)
+                transform: translate(0,1px)
             &:last-child
                 position: absolute
                 opacity: 0
-                transform: translate(0,-10px)
+                transform: translate(0,-1px)
             &:nth-child(2)
                 margin-top: 15px
+
+// border: 1px solid #590D56
+// transform: matrix(1, 0, 0, -1, 0, 0)
