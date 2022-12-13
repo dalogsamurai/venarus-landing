@@ -1,4 +1,14 @@
 .switcher
+    &__content
+        display: flex
+        margin-bottom: 15px
+    &__item
+        z-index: 0
+        position: absolute
+        &._active
+            margin-top: 80px
+            z-index: 1
+            position: relative
     &__buttons
         display: flex
         gap: 30px
