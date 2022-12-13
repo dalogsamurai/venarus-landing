@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Running } from "../components/running.component";
 import { AdvantageList } from "../components/advantage-list.component";
 import "./main.page.sass";
+import { About } from "../components/about.component";
 
 export const MainPage = () => {
   const [disclaimerVisible, setDisclaimerVisible] = useState(true);
@@ -24,6 +25,7 @@ export const MainPage = () => {
       </div>
       <div className="main-page layout">
         <AdvantageList />
+        <About />
       </div>
       <img src={iHeroBackground} alt="" className="background" />
     </>
