@@ -3,8 +3,9 @@ import { Navigation } from "../components/navigation.component";
 import iHeroBackground from "../assets/hero-background.svg";
 import { Disclaimer } from "../components/disclaimer.component";
 import { useState } from "react";
-import "./main.page.sass";
 import { Running } from "../components/running.component";
+import { AdvantageList } from "../components/advantage-list.component";
+import "./main.page.sass";
 
 export const MainPage = () => {
   const [disclaimerVisible, setDisclaimerVisible] = useState(true);
@@ -20,6 +21,9 @@ export const MainPage = () => {
           <Disclaimer close={() => setDisclaimerVisible(false)} />
         )}
         <Running />
+      </div>
+      <div className="main-page layout">
+        <AdvantageList />
       </div>
       <img src={iHeroBackground} alt="" className="background" />
     </>
