@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Tooltip from "@material-ui/core/Tooltip";
 import "./advantage.component.sass";
 
 type Props = {
@@ -13,7 +14,16 @@ export const Advantage: FC<Props> = ({ image, text, extra }) => {
       <img src={image} alt="" className="advantage__img" />
       <div className="advantage__text">
         {text}
-        {extra && <img src={extra} alt="" className="advantage__extra" />}
+        {extra && (
+          <Tooltip title="sometext">
+            <img
+              data-tooltip="Всплывающая подсказка"
+              src={extra}
+              alt=""
+              className="advantage__extra"
+            />
+          </Tooltip>
+        )}
       </div>
     </div>
   );
