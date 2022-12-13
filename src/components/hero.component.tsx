@@ -13,7 +13,6 @@ export const Hero = () => {
       <div className="hero__right">
         <Switcher />
       </div>
-      {/* <img src={iHeroBackground} alt="" className="hero__background" /> */}
     </div>
   );
 };
