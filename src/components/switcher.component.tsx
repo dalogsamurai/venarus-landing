@@ -15,8 +15,24 @@ export const Switcher = () => {
         <img src={items[selected]} alt="" className="switcher__item" />
       </div>
       <div className="switcher__buttons">
-        <img className="switcher__arrow" src={iArrow} />
-        <img className="switcher__arrow right" src={iArrow} />
+        <img
+          className="switcher__arrow"
+          onClick={() => {
+            if (selected !== 0) {
+              isSelected(selected - 1);
+            }
+          }}
+          src={iArrow}
+        />
+        <img
+          className="switcher__arrow right"
+          onClick={() => {
+            if (selected !== items.length - 1) {
+              isSelected(selected + 1);
+            }
+          }}
+          src={iArrow}
+        />
       </div>
     </div>
   );
