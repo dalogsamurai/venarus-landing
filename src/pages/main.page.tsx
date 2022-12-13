@@ -1,9 +1,10 @@
 import { Hero } from "../components/hero.component";
 import { Navigation } from "../components/navigation.component";
 import iHeroBackground from "../assets/hero-background.svg";
-import "./main.page.sass";
 import { Disclaimer } from "../components/disclaimer.component";
 import { useState } from "react";
+import "./main.page.sass";
+import { Running } from "../components/running.component";
 
 export const MainPage = () => {
   const [disclaimerVisible, setDisclaimerVisible] = useState(true);
@@ -18,6 +19,7 @@ export const MainPage = () => {
         {disclaimerVisible && (
           <Disclaimer close={() => setDisclaimerVisible(false)} />
         )}
+        <Running />
       </div>
       <img src={iHeroBackground} alt="" className="background" />
     </>

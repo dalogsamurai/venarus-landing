@@ -8,7 +8,7 @@ import "./switcher.component.sass";
 
 export const Switcher = () => {
   const items = [iVenarus1, iVenarus2, iVenarus3];
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(1);
 
   return (
     <div className="switcher">

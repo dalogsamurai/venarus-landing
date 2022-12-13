@@ -1,0 +1,27 @@
+@import '../styles/vars.sass'
+
+.running
+    font-family: 'Roboto'
+    font-style: normal
+    font-weight: 300
+    font-size: 48px
+    line-height: 56px
+    text-transform: uppercase
+    color: $purple-btn
+    display: flex
+    align-items: center
+    overflow: hidden
+    padding-top: 16px
+    padding-bottom: 22px
+    border: 1px $purple-second solid
+    &__text
+        width: 100%
+        white-space: nowrap
+        animation: run 8s infinite linear
+
+@keyframes run
+    0%
+        transform: translateX(0)
+
+    100%
+        transform: translateX(100%)
