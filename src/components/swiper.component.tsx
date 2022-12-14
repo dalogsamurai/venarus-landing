@@ -8,17 +8,17 @@ import "./swiper.component.sass";
 export const Swiper = () => {
   let items = [iVideoPreview1, iVideoPreview2, iVideoPreview3];
   const [active, setActive] = useState(0);
+  const [isClicked, setIsClicked] = useState(false);
 
-  const timeout = async (time: number) => {
-    const delay = (ms: number) =>
-      new Promise((resolve) => setTimeout(resolve, ms));
-    await delay(time);
-  };
-
-  //   useEffect(() => {
-  //     timeout(2000);
-  //     setActive(active + 1);
-  //   }, [active]);
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (!isClicked) {
+      timer = setTimeout(() => setActive(active === 2 ? 0 : active + 1), 2000);
+    }
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [active]);
 
   return (
     <div className="swiper">
@@ -26,15 +26,24 @@ export const Swiper = () => {
       <div className="swiper__buttons">
         <div
           className={cn("swiper__button", { active: active === 0 })}
-          onClick={() => setActive(0)}
+          onClick={() => {
+            setActive(0);
+            setIsClicked(true);
+          }}
         />
         <div
           className={cn("swiper__button", { active: active === 1 })}
-          onClick={() => setActive(1)}
+          onClick={() => {
+            setActive(1);
+            setIsClicked(true);
+          }}
         />
         <div
           className={cn("swiper__button", { active: active === 2 })}
-          onClick={() => setActive(2)}
+          onClick={() => {
+            setActive(2);
+            setIsClicked(true);
+          }}
         />
       </div>
     </div>
