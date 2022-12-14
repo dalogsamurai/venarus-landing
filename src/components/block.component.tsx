@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { AboutList } from "./about-list.component";
 import "./block.component.sass";
 
 type Props = {

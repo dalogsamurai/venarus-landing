@@ -1,5 +1,4 @@
 import { HeroButtonList } from "./hero-button-list.component";
-import iHeroBackground from "../assets/hero-background.svg";
 import { Switcher } from "./switcher.component";
 import "./hero.component.sass";
 
