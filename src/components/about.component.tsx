@@ -6,8 +6,8 @@ export const About = () => {
       <div className="about__text">
         <div className="about__title">О препарате</div>
         <div className="about__description">
-          Венарус показан для терапии симптомов хронических заболеваний вен
-          (устранения и облегчения симптомов).
+          Венарус показан для терапии симптомов хронических заболеваний&nbsp;вен
+          (устранения и&nbsp;облегчения симптомов).
         </div>
         <div className="about__more">Подробнее {">"}</div>
       </div>

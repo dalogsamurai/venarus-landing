@@ -1,15 +1,29 @@
 @import '../styles/vars.sass'
 
 .about
+    &__text
+        display: flex
+        flex-direction: column
+        gap: 14px
     &__title
         font-family: 'Merriweather'
         font-weight: 700
         font-size: 30px
         line-height: 120%
         color: $black
+        height: 67px
     &__description
         font-family: 'Roboto'
         font-weight: 400
         font-size: 16px
         line-height: 154.8%
         color: $gray
+        width: 263px
+    &__more
+        font-family: 'Roboto'
+        font-weight: 400
+        font-size: 18px
+        line-height: 21px
+        text-decoration-line: underline
+        color: $purple-btn
+        cursor: pointer
