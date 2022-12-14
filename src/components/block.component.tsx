@@ -3,7 +3,7 @@ import "./block.component.sass";
 
 type Props = {
   title: string;
-  description: string;
+  description?: string;
   extra?: string;
   children: any;
 };

@@ -9,6 +9,7 @@ import { Block } from "../components/block.component";
 import { AboutList } from "../components/about-list.component";
 import { Swiper } from "../components/swiper.component";
 import "./main.page.sass";
+import { Helpful } from "../components/helpful.component";
 
 export const MainPage = () => {
   const [disclaimerVisible, setDisclaimerVisible] = useState(true);
@@ -38,6 +39,7 @@ export const MainPage = () => {
           description="Фармакотерапия — неотъемлемый компонент современного лечения хронического заболевания вен."
           children={<Swiper />}
         />
+        <Block title="Полезная информация" children={<Helpful />} />
       </div>
       <img src={iHeroBackground} alt="" className="background" />
     </>
