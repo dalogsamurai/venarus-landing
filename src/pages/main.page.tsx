@@ -5,8 +5,9 @@ import { Disclaimer } from "../components/disclaimer.component";
 import { useState } from "react";
 import { Running } from "../components/running.component";
 import { AdvantageList } from "../components/advantage-list.component";
+import { Block } from "../components/block.component";
+import { AboutList } from "../components/about-list.component";
 import "./main.page.sass";
-import { About } from "../components/about.component";
 
 export const MainPage = () => {
   const [disclaimerVisible, setDisclaimerVisible] = useState(true);
@@ -25,7 +26,12 @@ export const MainPage = () => {
       </div>
       <div className="main-page layout">
         <AdvantageList />
-        <About />
+        <Block
+          title="О препарате"
+          description="Венарус показан для терапии симптомов хронических заболеваний&nbsp;вен (устранения и&nbsp;облегчения симптомов)."
+          extra="Подробнее >"
+          children={<AboutList />}
+        />
       </div>
       <img src={iHeroBackground} alt="" className="background" />
     </>
