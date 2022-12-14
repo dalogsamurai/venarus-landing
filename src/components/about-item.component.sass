@@ -1,0 +1,23 @@
+@import '../styles/vars.sass'
+
+.about-item
+    border-top: 1px $purple-second solid
+    display: flex
+    align-items: center
+    padding: 30px 98px
+    gap: 61px
+    text-align: left
+    &:nth-child(2)
+        flex-direction: row-reverse
+        padding: 30px 30px
+        gap: 31px
+    &:last-child
+        border-bottom: 1px $purple-second solid
+    &__text
+        font-family: 'Roboto'
+        font-weight: 300
+        font-size: 30px
+        line-height: 100%
+        display: flex
+        color: $black
+        width: 360px

@@ -1,3 +1,4 @@
+import { AboutList } from "./about-list.component";
 import "./about.component.sass";
 
 export const About = () => {
@@ -10,6 +11,9 @@ export const About = () => {
           (устранения и&nbsp;облегчения симптомов).
         </div>
         <div className="about__more">Подробнее {">"}</div>
+      </div>
+      <div className="about__list">
+        <AboutList />
       </div>
     </div>
   );
