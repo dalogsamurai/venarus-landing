@@ -7,6 +7,7 @@ import { Running } from "../components/running.component";
 import { AdvantageList } from "../components/advantage-list.component";
 import { Block } from "../components/block.component";
 import { AboutList } from "../components/about-list.component";
+import { Swiper } from "../components/swiper.component";
 import "./main.page.sass";
 
 export const MainPage = () => {
@@ -31,6 +32,11 @@ export const MainPage = () => {
           description="Венарус показан для терапии симптомов хронических заболеваний&nbsp;вен (устранения и&nbsp;облегчения симптомов)."
           extra="Подробнее >"
           children={<AboutList />}
+        />
+        <Block
+          title="Мнение специалистов"
+          description="Фармакотерапия — неотъемлемый компонент современного лечения хронического заболевания вен."
+          children={<Swiper />}
         />
       </div>
       <img src={iHeroBackground} alt="" className="background" />
