@@ -7,10 +7,10 @@ import "./helpful.component.sass";
 export const Helpful = () => {
   return (
     <div className="helpful">
-      <HelpfulBlock image={iHelpful1} text="Профилактические упражнения" />
-      <HelpfulBlock image={iHelpful2} text="Диагностика и способы лечения" />
-      <HelpfulBlock image={iHelpful3} text="Планы по питанию " />
-      <HelpfulBlock text="Факты о варикозе" />
+      <HelpfulBlock image={iHelpful1} text="Профилактические упражнения" imgClass="first" />
+      <HelpfulBlock image={iHelpful2} text="Диагностика и способы лечения" imgClass="second"/>
+      <HelpfulBlock image={iHelpful3} text="Планы по питанию " imgClass="third"/>
+      <HelpfulBlock text="Факты о варикозе" imgClass="fourth"/>
     </div>
   );
 };

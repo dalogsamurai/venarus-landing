@@ -8,8 +8,8 @@ import { AdvantageList } from "../components/advantage-list.component";
 import { Block } from "../components/block.component";
 import { AboutList } from "../components/about-list.component";
 import { Swiper } from "../components/swiper.component";
-import "./main.page.sass";
 import { Helpful } from "../components/helpful.component";
+import "./main.page.sass";
 
 export const MainPage = () => {
   const [disclaimerVisible, setDisclaimerVisible] = useState(true);
