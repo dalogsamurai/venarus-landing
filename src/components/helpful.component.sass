@@ -1,4 +1,9 @@
+
+@import '../styles/vars.sass'
+
 .helpful
     display: grid
     gap: 30px
     grid-template-areas: "first second third" "first fourth fourth"
+    &:nth-child(2)
+        background-color: $purple-second
