@@ -14,7 +14,7 @@ export const Helpful = () => {
       />
       <HelpfulBlock
         image={iHelpful2}
-        text="Диагностика и способы лечения"
+        text="Диагностика и&nbsp;способы лечения"
         imgClass="second"
       />
       <HelpfulBlock
