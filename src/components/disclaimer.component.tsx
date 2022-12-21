@@ -3,7 +3,7 @@ import iClose from "../assets/close.svg";
 import "./disclaimer.component.sass";
 
 type Props = {
-  close: () => void;
+  close?: () => void;
 };
 
 export const Disclaimer: FC<Props> = ({ close }) => {
@@ -15,7 +15,13 @@ export const Disclaimer: FC<Props> = ({ close }) => {
         Имеются противопоказания, необходимо ознакомиться с инструкцией или
         получить консультацию специалиста
       </div>
-      <img className="disclaimer__close" src={iClose} onClick={() => close()} />
+      {close && (
+        <img
+          className="disclaimer__close"
+          src={iClose}
+          onClick={() => close()}
+        />
+      )}
     </div>
   );
 };

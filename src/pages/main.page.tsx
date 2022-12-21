@@ -11,6 +11,7 @@ import { Swiper } from "../components/swiper.component";
 import { Helpful } from "../components/helpful.component";
 import { Buy } from "../components/buy.component";
 import "./main.page.sass";
+import { Footer } from "../components/footer.component";
 
 export const MainPage = () => {
   const [disclaimerVisible, setDisclaimerVisible] = useState(true);
@@ -46,6 +47,9 @@ export const MainPage = () => {
           description="Ветонизирующее средство ВЕНАРУС вы можете приобрести в аптеках вашего города"
           children={<Buy />}
         />
+      </div>
+      <div className="main-page">
+        <Footer />
       </div>
       <img src={iHeroBackground} alt="" className="background" />
     </>
