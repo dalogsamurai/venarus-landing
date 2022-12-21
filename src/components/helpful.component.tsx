@@ -28,7 +28,8 @@ export const Helpful = () => {
       </div>
       <div className="helpful__bottom">
         <div className="more-button">
-          <div className="more-button__text">Подробнее {">"}</div>
+          Подробнее {">"}
+          {/* <div className="more-button__text">Подробнее {">"}</div> */}
         </div>
       </div>
     </>

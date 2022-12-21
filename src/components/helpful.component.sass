@@ -3,7 +3,7 @@
 
 .helpful
     display: grid
-    gap: 30px
+    gap: 15px
     grid-template-areas: "first second third" "first fourth fourth"
     // TODO
     &:nth-child(2)
@@ -17,5 +17,10 @@
     padding: 20px 78px
     border-radius: 32px
     text-align: center
-    &__text
-        color: $purple-second
+    cursor: pointer
+    text-color: $purple-second
+    transition-duration: .3s
+    color: $purple-second
+    &:hover
+        color: $white
+        background-color: $purple-second
