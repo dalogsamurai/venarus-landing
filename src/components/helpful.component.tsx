@@ -1,6 +1,7 @@
 import iHelpful1 from "../assets/helpful-1.jpg";
 import iHelpful2 from "../assets/helpful-2.jpeg";
 import iHelpful3 from "../assets/helpful-3.jpg";
+import { Button } from "./button.component";
 import { HelpfulBlock } from "./helpful-block.component";
 import "./helpful.component.sass";
 
@@ -27,10 +28,7 @@ export const Helpful = () => {
         {/* <HelpfulBlock text="Факты о варикозе" imgClass="fourth" /> */}
       </div>
       <div className="helpful__bottom">
-        <div className="more-button">
-          Подробнее {">"}
-          {/* <div className="more-button__text">Подробнее {">"}</div> */}
-        </div>
+        <Button text="Подробнее >" />
       </div>
     </>
   );
