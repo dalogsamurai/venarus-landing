@@ -9,6 +9,7 @@ import { Block } from "../components/block.component";
 import { AboutList } from "../components/about-list.component";
 import { Swiper } from "../components/swiper.component";
 import { Helpful } from "../components/helpful.component";
+import { Buy } from "../components/buy.component";
 import "./main.page.sass";
 
 export const MainPage = () => {
@@ -40,6 +41,11 @@ export const MainPage = () => {
           children={<Swiper />}
         />
         <Block title="Полезная информация" children={<Helpful />} />
+        <Block
+          title="Где купить"
+          description="Ветонизирующее средство ВЕНАРУС вы можете приобрести в аптеках вашего города"
+          children={<Buy />}
+        />
       </div>
       <img src={iHeroBackground} alt="" className="background" />
     </>
