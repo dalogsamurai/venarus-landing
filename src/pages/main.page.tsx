@@ -49,6 +49,9 @@ export const MainPage = () => {
         />
       </div>
       <div className="main-page">
+        <Disclaimer />
+      </div>
+      <div className="main-page layout">
         <Footer />
       </div>
       <img src={iHeroBackground} alt="" className="background" />
