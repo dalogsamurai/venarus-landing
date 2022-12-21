@@ -4,12 +4,18 @@
         margin-bottom: 15px
         justify-content: center
     &__item
+        position: relative
         z-index: 0
-        // position: absolute
+        &:nth-child(1)
+            left: 50px
+        &:nth-child(2)
+            left: 150px
+        &:nth-child(3)
+            right: 365px
         &._active
             margin-top: 80px
             z-index: 1
-            position: relative
+            left: -24%
     &__buttons
         display: flex
         gap: 30px
