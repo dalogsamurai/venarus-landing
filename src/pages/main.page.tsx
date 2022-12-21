@@ -16,7 +16,7 @@ export const MainPage = () => {
   const [disclaimerVisible, setDisclaimerVisible] = useState(true);
 
   return (
-    <div className="shadow">
+    <>
       <div className="main-page layout">
         <Navigation />
         <Hero />
@@ -48,6 +48,6 @@ export const MainPage = () => {
         />
       </div>
       <img src={iHeroBackground} alt="" className="background" />
-    </div>
+    </>
   );
 };
