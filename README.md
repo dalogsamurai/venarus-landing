@@ -1,3 +1,5 @@
+Доделан не до конца, есть баги и неточности
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
