@@ -31,11 +31,17 @@ export const Menu = () => {
         <div className="menu__item">О варикозе</div>
         <div className="menu__item">Решение</div>
         <div className="menu__item">Специалистам</div>
-        <img className="purple-line" src={iPurpleLine1} />
-        <img className="purple-line" src={iPurpleLine2} />
-        <img className="purple-line" src={iPurpleLine3} />
-        <img className="purple-line" src={iPurpleLine4} />
-        <img className="purple-line" src={iPurpleLine5} />
+        <img className="purple-line left first" src={iPurpleLine1} />
+        <img className="purple-line left second" src={iPurpleLine2} />
+        <img className="purple-line left third" src={iPurpleLine3} />
+        <img className="purple-line left fourth" src={iPurpleLine4} />
+        <img className="purple-line left fifth" src={iPurpleLine5} />
+
+        <img className="purple-line right first" src={iPurpleLine1} />
+        <img className="purple-line right second" src={iPurpleLine2} />
+        <img className="purple-line right third" src={iPurpleLine3} />
+        <img className="purple-line right fourth" src={iPurpleLine4} />
+        <img className="purple-line right fifth" src={iPurpleLine5} />
       </div>
       <div className="header__btn" onClick={toggleMenu}>
         <img

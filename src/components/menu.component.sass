@@ -58,3 +58,36 @@
 
 .purple-line
     position: absolute
+    left: 0
+    white-space: nowrap
+
+.left
+    animation: waveIn 8s infinite linear
+
+.right
+    animation: waveOut 8s infinite linear
+
+.first
+    top: 69px
+.second
+    top: 385px
+.third
+    top: 415px
+.fourth
+    top: 570px
+.fifth
+    top: 700px
+
+@keyframes waveIn
+    0%
+        transform: translateX(-100%)
+
+    100%
+        transform: translateX(0%)
+
+@keyframes waveOut
+    0%
+        transform: translateX(0%)
+
+    100%
+        transform: translateX(100%)
