@@ -31,6 +31,11 @@ export const Menu = () => {
         <div className="menu__item">О варикозе</div>
         <div className="menu__item">Решение</div>
         <div className="menu__item">Специалистам</div>
+        <img className="purple-line" src={iPurpleLine1} />
+        <img className="purple-line" src={iPurpleLine2} />
+        <img className="purple-line" src={iPurpleLine3} />
+        <img className="purple-line" src={iPurpleLine4} />
+        <img className="purple-line" src={iPurpleLine5} />
       </div>
       <div className="header__btn" onClick={toggleMenu}>
         <img
@@ -46,12 +51,6 @@ export const Menu = () => {
           className={cn("header__btn-row", { _opened: isOpen })}
         />
       </div>
-      {/* <div className="purple-line" />
-      <div className="purple-line" />
-      <div className="purple-line" />
-      <div className="purple-line" />
-      <div className="purple-line" /> */}
-      {/* TODO */}
     </>
   );
 };
