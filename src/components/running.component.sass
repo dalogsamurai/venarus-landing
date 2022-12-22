@@ -18,9 +18,19 @@
     &__text
         width: 100%
         white-space: nowrap
-        animation: run 8s infinite linear
+        .left
+            animation: runIn 8s infinite linear
+        .right
+            animation: runOut 8s infinite linear
 
-@keyframes run
+@keyframes runIn
+    0%
+        transform: translateX(-100%)
+
+    100%
+        transform: translateX(0)
+
+@keyframes runOut
     0%
         transform: translateX(0)
 

@@ -3,7 +3,27 @@ import "./running.component.sass";
 export const Running = () => {
   return (
     <div className="running">
-      <div className="running__text">
+      <div className="running__text left">
+        получить скидку 10% {">"}
+        {">"}
+        {">"}
+        получить скидку 10% {">"}
+        {">"}
+        {">"}
+        получить скидку 10% {">"}
+        {">"}
+        {">"}
+        получить скидку 10% {">"}
+        {">"}
+        {">"}
+        получить скидку 10% {">"}
+        {">"}
+        {">"}
+        получить скидку 10% {">"}
+        {">"}
+        {">"}
+      </div>
+      <div className="running__text right">
         получить скидку 10% {">"}
         {">"}
         {">"}
