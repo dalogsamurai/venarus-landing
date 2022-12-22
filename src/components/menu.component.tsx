@@ -1,4 +1,9 @@
 import { useEffect, useState } from "react";
+import iPurpleLine1 from "../assets/purple-line-1.svg";
+import iPurpleLine2 from "../assets/purple-line-2.svg";
+import iPurpleLine3 from "../assets/purple-line-3.svg";
+import iPurpleLine4 from "../assets/purple-line-4.svg";
+import iPurpleLine5 from "../assets/purple-line-5.svg";
 import cn from "classnames";
 import iMenuWave from "../assets/menu-wave.svg";
 import "./menu.component.sass";
