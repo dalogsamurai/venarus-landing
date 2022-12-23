@@ -32,7 +32,7 @@ export const Switcher = () => {
           src={iArrow}
         />
         <img
-          className="switcher__arrow right"
+          className="switcher__arrow arrow__right"
           onClick={() => {
             if (selected !== items.length - 1) {
               setSelected(selected + 1);
